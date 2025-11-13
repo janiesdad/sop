@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRA Operations Manual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Landing Page Specific Styles */
+        .hero {
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .image-placeholder {
+            margin: 48px auto;
+            max-width: 1169px;
+            width: 100%;
+            aspect-ratio: 1169 / 459;
+            background: #F0F0F0;
+            border: 1px dashed #CCCCCC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        .image-placeholder span {
+            color: #999999;
+            font-size: 0.875rem;
+            font-family: var(--font-body);
+        }
+
+        .supporting-text {
+            margin-top: 16px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--border-light);
+            padding: 32px;
+            border-radius: 4px;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        .card-link {
+            color: var(--accent-navy);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            margin-top: 16px;
+            display: inline-block;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">NSW INTRA</div>
+                <nav>
+                    <ul>
+                        <li><a href="how-to-use.html">How to Use</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                        <li><a href="whats-inside.html">What's Inside</a></li>
+                        <li><a href="#about">About NSW</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Intelligence. Operationalized.</h1>
+            <p>Actionable AI Intelligence For The Always-On Advisor</p>
+            
+            <!-- Hero Image -->
+            <img src="hero-image.png" alt="INTRA Intelligence Platform" style="max-width: 1169px; width: 100%; height: auto; margin: 48px auto; display: block; border-radius: 4px;">
+            
+            <a href="#" class="cta-button">Access INTRA</a>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section>
+        <div class="container">
+            <h2>The Challenge</h2>
+            <p>Financial advisors and their teams operate in a complex ecosystem of carriers, compliance requirements, product specifications, and third-party relationships. Critical information—underwriting criteria, account minimums, regulatory updates—used to require phone calls, email chains, and manual searches through outdated documentation.</p>
+            <p>This created a recurring time tax. Teams paused productive work to hunt for answers. Momentum stalled. Hours accumulated.</p>
+        </div>
+    </section>
+
+    <section style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2>The Solution</h2>
+            <p>INTRA centralizes operational knowledge into a searchable, AI-powered system. Instead of interrupting workflows to retrieve information, advisors query INTRA and receive verified answers in seconds.</p>
+            <p>Built for New South Wealth Management—INTRA eliminates information retrieval bottlenecks across compliance, underwriting, product specifications, and operations procedures.</p>
+            
+            <h3 style="margin-top: 32px;">Key Capabilities:</h3>
+            <ul style="list-style: none; padding-left: 0;">
+                <li style="margin-bottom: 12px; padding-left: 24px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--accent-navy);">→</span>
+                    Instant access to carrier underwriting requirements
+                </li>
+                <li style="margin-bottom: 12px; padding-left: 24px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--accent-navy);">→</span>
+                    Current compliance and regulatory standards (2025 FINRA, SEC, DOL)
+                </li>
+                <li style="margin-bottom: 12px; padding-left: 24px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--accent-navy);">→</span>
+                    Operations workflows and case design procedures
+                </li>
+                <li style="margin-bottom: 12px; padding-left: 24px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--accent-navy);">→</span>
+                    Third-party relationship details (Howard Capital, clearing firms, vendors)
+                </li>
+                <li style="margin-bottom: 12px; padding-left: 24px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--accent-navy);">→</span>
+                    Standard Operating Procedure documentation
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">From Hours to Seconds</h2>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <h3>1410+</h3>
+                    <div class="metric-label">Data points as nodes</div>
+                    <div class="metric-description">And growing</div>
+                </div>
+                <div class="metric">
+                    <h3>12+ Categories</h3>
+                    <div class="metric-label">Knowledge domains accessible</div>
+                    <div class="metric-description">Ethics, compliance, operations, products</div>
+                </div>
+                <div class="metric">
+                    <h3>Verified Answers</h3>
+                    <div class="metric-label">AI-scaffolded retrieval</div>
+                    <div class="metric-description">Internal system, controlled sources</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Cards -->
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">Get Started</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📖</div>
+                    <h3>How to Use</h3>
+                    <p>Learn to query INTRA effectively. Best practices for framing questions and integrating retrieval into daily workflows.</p>
+                    <a href="how-to-use.html" class="card-link">View Guide →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📋</div>
+                    <h3>Documentation</h3>
+                    <p>Browse the complete knowledge base. Regulatory updates, operations procedures, carrier requirements, and technical references.</p>
+                    <a href="docs.html" class="card-link">Explore Docs →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔍</div>
+                    <h3>What's Inside</h3>
+                    <p>Understand INTRA's full capabilities. Coverage areas, success metrics, and the knowledge expansion roadmap.</p>
+                    <a href="whats-inside.html" class="card-link">See Coverage →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>New South Wealth Management</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+                        [Address placeholder]<br>
+                        [Phone placeholder]<br>
+                        [Email placeholder]
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About NSW</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#accessibility">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Built by The Janie Group</h4>
+                    <ul>
+                        <li><a href="#case-study">Case Study</a></li>
+                        <li><a href="#documentation">Technical Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2025 New South Wealth Management. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
